@@ -6,11 +6,41 @@ describe('myApp.view1 module', function() {
 
   describe('view1 controller', function(){
 
-    it('should ....', inject(function($controller) {
-      //spec body
-      var view1Ctrl = $controller('View1Ctrl');
-      expect(view1Ctrl).toBeDefined();
+    var scope, firstController, phoneService, codeService;
+
+    beforeEach(inject(function($controller, $rootScope) {
+
+      scope=$rootScope.$new();
+
+      phoneService = {
+        phones: function() {
+          return { id: 8888, name: 'test user' };
+        }
+      };
+
+      codeService = {
+        get: function() {
+          return { scenarioId: 5, name: 'test user' };
+        }
+      };
+
+      firstController = $controller('View1Ctrl', {
+        $scope: scope,
+        phoneService: phoneService,
+        codeService: codeService
+      });
+
     }));
+
+    it('should ....', function() {
+      //spec body
+      expect(scope.orderProp).toBe('age');
+
+    });
+
+    it('has 1 as default scenario', function() {
+      expect(scope.scenarioId).toBe(1);
+    });
 
   });
 });

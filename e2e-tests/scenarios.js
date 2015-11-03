@@ -11,7 +11,7 @@ describe('my app', function() {
   });
 
 
-  describe('view1', function() {
+  describe('shows view1 page', function() {
 
     beforeEach(function() {
       browser.get('index.html#/view1');
@@ -26,7 +26,7 @@ describe('my app', function() {
   });
 
 
-  describe('view2', function() {
+  describe('shows view2 page', function() {
 
     beforeEach(function() {
       browser.get('index.html#/view2');

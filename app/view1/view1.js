@@ -16,8 +16,7 @@ angular.module('myApp.view1', ['ngRoute'])
     $scope.scenarioId = 1;
 
     $scope.setScenario = function (scenarioId) {
-      $scope.scenarioId = scenarioId;
-      $scope.scenario = codeService.code($scope.scenarioId);
+      $scope.scenario = codeService.code(scenarioId);
     };
 
   }

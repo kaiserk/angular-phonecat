@@ -7,7 +7,9 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.codeview',
   'myApp.version',
-  'myApp.Services'
+  'myApp.Services',
+  'ngAnimate',
+  'ui.bootstrap'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});

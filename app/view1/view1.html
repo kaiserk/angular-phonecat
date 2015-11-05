@@ -1,56 +1,65 @@
-<p>This is the partial for view 1.</p>
+<h1>Kaiser Online</h1>
+<!--<h2>Home</h2>-->
+
+<a href="#codeview" class="btn btn-info btn-lg">Training</a>
+<a href="#codeview" class="btn btn-warning btn-lg">Lab</a>
+<a href="#codeview" class="btn btn-danger btn-lg">Experiments</a>
+<a href="#view2" class="btn btn-success btn-lg">About</a>
+<a href="#codeview" class="btn btn-danger btn-lg">Contact</a>
+
+<!--<p>This is the partial for view 1.</p>-->
 
 
-<div class="container-fluid">
+<!--<div class="container-fluid">-->
 
-    <div>
-        <script type="text/ng-template" id="alert.html">
-            <div class="alert" style="background-color:#fa39c3;color:white" role="alert">
-                <div ng-transclude></div>
-            </div>
-        </script>
+    <!--&lt;!&ndash;<div>&ndash;&gt;-->
+        <!--&lt;!&ndash;<script type="text/ng-template" id="alert.html">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="alert" style="background-color:#fa39c3;color:white" role="alert">&ndash;&gt;-->
+                <!--&lt;!&ndash;<div ng-transclude></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</script>&ndash;&gt;-->
 
-        <uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</uib-alert>
-        <uib-alert template-url="alert.html">A happy alert!</uib-alert>
-        <button type="button" class='btn btn-default' ng-click="addAlert()">Add Alert</button>
-    </div>
+        <!--&lt;!&ndash;<uib-alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</uib-alert>&ndash;&gt;-->
+        <!--&lt;!&ndash;<uib-alert template-url="alert.html">A happy alert!</uib-alert>&ndash;&gt;-->
+        <!--&lt;!&ndash;<button type="button" class='btn btn-default' ng-click="addAlert()">Add Alert</button>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
-    <div class="row">
-        <div class="col-md-2">
-            <!--Sidebar content-->
-            Search: <input ng-model="query" ng-mouseover="setScenario(2)">
-            Sort by:
-            <select ng-mouseover="setScenario(3)" ng-model="orderProp">
-                <option value="name">Alphabetical</option>
-                <option value="age">Newest</option>
-            </select>
-            <ul class="tabs">
-                <li><a href="#tab1">Test Scenario</a></li>
-            </ul>
-            <div class="code">
-                <code>
-<pre ng-bind="scenario">
-</pre>
-                </code>
-            </div>
-            </tab>
-            </section>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-10">
-            <!--Body content-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-2">-->
+            <!--&lt;!&ndash;Sidebar content&ndash;&gt;-->
+            <!--Search: <input ng-model="query" ng-mouseover="setScenario(2)">-->
+            <!--Sort by:-->
+            <!--<select ng-mouseover="setScenario(3)" ng-model="orderProp">-->
+                <!--<option value="name">Alphabetical</option>-->
+                <!--<option value="age">Newest</option>-->
+            <!--</select>-->
+            <!--<ul class="tabs">-->
+                <!--<li><a href="#tab1">Test Scenario</a></li>-->
+            <!--</ul>-->
+            <!--<div class="code">-->
+                <!--<code>-->
+<!--<pre ng-bind="scenario">-->
+<!--</pre>-->
+                <!--</code>-->
+            <!--</div>-->
+            <!--</tab>-->
+            <!--</section>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row">-->
+        <!--<div class="col-md-10">-->
+            <!--&lt;!&ndash;Body content&ndash;&gt;-->
 
-            <ul class="phones">
-                <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
-                    class="thumbnail phone-listing">
-                    <a ng-click="setScenario(5)" href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
-                    <a ng-mouseover="setScenario(4)" ng-click="setScenario(5)" href="#/phones/{{phone.id}}">{{phone.name}}</a>
-                    <p>{{phone.snippet}}</p>
-                </li>
-            </ul>
+            <!--<ul class="phones">-->
+                <!--<li ng-repeat="phone in phones | filter:query | orderBy:orderProp"-->
+                    <!--class="thumbnail phone-listing">-->
+                    <!--<a ng-click="setScenario(5)" href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>-->
+                    <!--<a ng-mouseover="setScenario(4)" ng-click="setScenario(5)" href="#/phones/{{phone.id}}">{{phone.name}}</a>-->
+                    <!--<p>{{phone.snippet}}</p>-->
+                <!--</li>-->
+            <!--</ul>-->
 
-        </div>
-    </div>
-</div>
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 

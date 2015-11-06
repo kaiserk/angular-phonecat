@@ -1,16 +1,16 @@
 <h1>Kaiser Online</h1>
 <!--<h2>Home</h2>-->
-
+<div><img ng-src="https://pbs.twimg.com/media/CTG_eY1UEAA4gaE.jpg:large"></div>
 <a href="#codeview" class="btn btn-info btn-lg">Training</a>
 <a href="#codeview" class="btn btn-warning btn-lg">Lab</a>
 <a href="#codeview" class="btn btn-danger btn-lg">Experiments</a>
 <a href="#view2" class="btn btn-success btn-lg">About</a>
 <a href="#codeview" class="btn btn-danger btn-lg">Contact</a>
 
-<!--<p>This is the partial for view 1.</p>-->
+<p>This is the partial for view 1.</p>
 
 
-<!--<div class="container-fluid">-->
+<div class="container-fluid" align="center">
 
     <!--&lt;!&ndash;<div>&ndash;&gt;-->
         <!--&lt;!&ndash;<script type="text/ng-template" id="alert.html">&ndash;&gt;-->
@@ -24,8 +24,9 @@
         <!--&lt;!&ndash;<button type="button" class='btn btn-default' ng-click="addAlert()">Add Alert</button>&ndash;&gt;-->
     <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
+
     <!--<div class="row">-->
-        <!--<div class="col-md-2">-->
+        <!--<div>-->
             <!--&lt;!&ndash;Sidebar content&ndash;&gt;-->
             <!--Search: <input ng-model="query" ng-mouseover="setScenario(2)">-->
             <!--Sort by:-->
@@ -33,33 +34,25 @@
                 <!--<option value="name">Alphabetical</option>-->
                 <!--<option value="age">Newest</option>-->
             <!--</select>-->
-            <!--<ul class="tabs">-->
-                <!--<li><a href="#tab1">Test Scenario</a></li>-->
-            <!--</ul>-->
-            <!--<div class="code">-->
-                <!--<code>-->
-<!--<pre ng-bind="scenario">-->
-<!--</pre>-->
-                <!--</code>-->
-            <!--</div>-->
-            <!--</tab>-->
+            <!--&lt;!&ndash;<ul class="tabs">&ndash;&gt;-->
+                <!--&lt;!&ndash;<li><a href="#tab1">Test Scenario</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="code">&ndash;&gt;-->
+                <!--&lt;!&ndash;<code>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<pre ng-bind="scenario">&ndash;&gt;-->
+                    <!--&lt;!&ndash;</pre>&ndash;&gt;-->
+                <!--&lt;!&ndash;</code>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
             <!--</section>-->
         <!--</div>-->
     <!--</div>-->
-    <!--<div class="row">-->
-        <!--<div class="col-md-10">-->
-            <!--&lt;!&ndash;Body content&ndash;&gt;-->
 
-            <!--<ul class="phones">-->
-                <!--<li ng-repeat="phone in phones | filter:query | orderBy:orderProp"-->
-                    <!--class="thumbnail phone-listing">-->
-                    <!--<a ng-click="setScenario(5)" href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>-->
-                    <!--<a ng-mouseover="setScenario(4)" ng-click="setScenario(5)" href="#/phones/{{phone.id}}">{{phone.name}}</a>-->
-                    <!--<p>{{phone.snippet}}</p>-->
-                <!--</li>-->
-            <!--</ul>-->
+</div>
 
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
+<!--<ul>-->
+    <!--<li ng-repeat="phone in phones | filter:query | orderBy:orderProp">-->
+        <!--<a ng-click="setScenario(5)" href="#/phones/{{phone.id}}"><img ng-src="{{phone.imageUrl}}"></a>-->
+        <!--<a ng-mouseover="setScenario(4)" ng-click="setScenario(5)" href="#/phones/{{phone.id}}">{{phone.name}}</a>-->
+        <!--<p>{{phone.snippet}}</p>-->
+    <!--</li>-->
+<!--</ul>-->

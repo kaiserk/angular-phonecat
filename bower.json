@@ -13,6 +13,7 @@
     "html5-boilerplate": "~5.2.0",
     "angular-resource": "1.4.x",
     "angular-bootstrap": "~0.14.3",
-    "angular-animate": "~1.4.7"
+    "angular-animate": "~1.4.7",
+    "angularfire": "~1.1.3"
   }
 }

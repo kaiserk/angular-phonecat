@@ -1,5 +1,20 @@
-<h1>Animating Pages Is Fun</h1>
-<h2>About</h2>
+<uib-tabset>
+  <uib-tab heading="Static title">Static content</uib-tab>
+  <uib-tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+    {{tab.content}}
+  </uib-tab>
+  <uib-tab select="alertMe()">
+    <uib-tab-heading>
+      <i class="glyphicon glyphicon-bell"></i> Alert!
+    </uib-tab-heading>
+    I've got an HTML heading, and a select callback. Pretty cool!
+  </uib-tab>
+</uib-tabset>
+
+<!-- anything typed in here is magically saved to our Firebase database! -->
+<input type="text" ng-model="data2.text"/>
+<!-- all changes from our Firebase database magically appear here! -->
+<h1>You said: {{ data2.text }}</h1>
 
 <a href="#" class="btn btn-primary btn-lg">Home</a>
 <a href="#contact" class="btn btn-danger btn-lg">Contact</a>

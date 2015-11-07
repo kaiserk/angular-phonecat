@@ -3,6 +3,7 @@ angular.module('myApp.view1', ['ngRoute'])
 
   .controller('View1Ctrl', ['$scope', 'phoneService', 'codeService',
     function($scope, phoneService, codeService) {
+      $scope.backgroundImage = 'https://s-media-cache-ak0.pinimg.com/originals/16/47/83/1647832206cd687d622f1826b68c304f.jpg';
       $scope.pageClass = 'page-view1';
 
       $scope.phones = phoneService.phones();

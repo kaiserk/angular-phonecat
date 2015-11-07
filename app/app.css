@@ -1,6 +1,6 @@
 /* BASE STYLES
 ============================================================================= */
-html         { overflow-y:hidden; }
+html         { overflow-y:scroll; }
 .page        {
   bottom:0;
   padding-top:50px;
@@ -15,9 +15,29 @@ html         { overflow-y:hidden; }
 .page a     { margin-top:50px; }
 #about      { color:#333; position:absolute; text-align:center; top:50px; width:100%; }
 
+/*body {*/
+  /*margin: 0;*/
+  /*padding: 0;*/
+  /*height: 100%;*/
+/*}*/
+
+/*#background {*/
+  /*background: url('https://s-media-cache-ak0.pinimg.com/originals/16/47/83/1647832206cd687d622f1826b68c304f.jpg');*/
+  /*background-size: 100%;*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*!*min-height:100%;*!*/
+/*}*/
+
 /* PAGES
 ============================================================================= */
-.page-view1 		{ padding-top:100px; background:#1c94c4; color:#00907c; }
+.page-view1 		{ padding-top:50px; color:#00907c;
+  background-image:url(https://s-media-cache-ak0.pinimg.com/originals/de/7a/ca/de7aca530d52e5fbab364cb83d99f082.jpg);
+  /*background-image:url(https://s-media-cache-ak0.pinimg.com/originals/c7/eb/aa/c7ebaa5445e78beb5390a6cb12cf4a21.jpg);*/
+  /*background-image:url(https://s-media-cache-ak0.pinimg.com/originals/16/47/83/1647832206cd687d622f1826b68c304f.jpg);*/
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .page-view2 	{ background:#E59400; color:#a55400; }
 .page-codeview 	{ background:#ffa6bb; color:#9e0000; }
 

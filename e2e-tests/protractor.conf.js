@@ -2,14 +2,14 @@ exports.config = {
   allScriptsTimeout: 11000,
 
   specs: [
-    '*.js'
+    'scenarios_bootstrap.js'
   ],
 
   capabilities: {
     'browserName': 'chrome'
   },
 
-  baseUrl: 'http://localhost:' + (process.env.HTTP_PORT || '3000') + '/app',
+  baseUrl: 'http://localhost:' + (process.env.HTTP_PORT || '3000'),
 
   framework: 'jasmine',
 

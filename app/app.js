@@ -34,7 +34,15 @@ angular.module('myApp', [
   }])
 
   .config(['$routeProvider', function($routeProvider) {
+    $routeProvider.when('/demo', {
+      templateUrl: 'bootstrap/index.html',
+      controller: 'bootstrap/assets/ui.bootstrap.demo'
+    });
+  }])
+
+  .config(['$routeProvider', function($routeProvider) {
     $routeProvider.otherwise({redirectTo: '/view1'});
   }])
 
 ;
+

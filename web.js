@@ -10,5 +10,5 @@ var connect = require('connect');
 
 var app = express();
 app.use(connect.compress());
-app.use(express.static(__dirname + '/app'));
+app.use(express.static(__dirname + '/app/default'));
 app.listen(process.env.PORT || 3000);

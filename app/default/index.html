@@ -51,7 +51,27 @@
 	
 </head>
 <body>
-	<!-- Page Top	 -->
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appId      : '933774046705599',
+				xfbml      : true,
+				version    : 'v2.5'
+			});
+
+			// ADD ADDITIONAL FACEBOOK CODE HERE
+		};
+
+		(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) {return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+<!-- Page Top	 -->
 	<div id="page-top"></div>
 	<!-- Page Top End -->
 
@@ -68,6 +88,8 @@
 					<div class="item active">
 						<div class="top-headings">
 							<h2 class="top-heading-1">
+								<h1 id="fb-welcome"></h1>
+
 								<span>We are</span> Business Innovators
 							</h2>
 							<h3 class="top-heading-2">

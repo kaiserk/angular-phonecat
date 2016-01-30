@@ -13,6 +13,6 @@ app.use(connect.compress());
 app.use(express.static(__dirname + '/app/default'));
 app.listen(process.env.PORT || 3000);
 
-server.post('/*', function(req, res){
-  res.sendfile('index.html');
+app.post('/*', function(request, response) {
+  response.redirect('/');
 });
